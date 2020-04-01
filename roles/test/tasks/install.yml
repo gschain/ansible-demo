@@ -1,0 +1,7 @@
+
+
+- name: copy test.txt to /tmp
+  copy: src=test.txt dest=/tmp/test.txt
+
+- name: copy test.yml to /tmp
+  template: src=test.yml dest=/tmp/test.yml

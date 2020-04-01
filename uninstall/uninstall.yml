@@ -1,0 +1,11 @@
+
+---
+- hosts: test
+  gather_facts: no
+  become: yes
+  tasks:
+    - name: del /tmp/test.txt /tmp/test.yml
+      file: path=/tmp/{{ item }} state=absent
+      loop:
+        - test.txt
+        - test.yml  

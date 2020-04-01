@@ -1,0 +1,3 @@
+
+templates: test model
+vars_context: {{ test_vars }}
